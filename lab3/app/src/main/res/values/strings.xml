@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">lab3</string>
+    <string name="go_to_third_fragment">Go to Third Fragment</string>
+    <string name="go_to_forth_fragment">Go to Forth Fragment</string>
+    <string name="fifth_fragment_text">Fifth Fragment Text</string>
+    <string name="forth_fragment_text">Forth Fragment Text</string>
+    <string name="go_to_fifth_fragment">Go to Fifth Fragment</string>
+    <string name="go_to_first_fragment">Go to First Fragment</string>
+    <string name="go_to_forth_fragment_from_first">Go to Forth Fragment</string>
+    <string name="go_to_second_fragment">Go to Second Fragment</string>
+    <string name="go_first">Go First</string>
+    <string name="first_name">First Name</string>
+    <string name="second_name">Second Name</string>
+</resources>

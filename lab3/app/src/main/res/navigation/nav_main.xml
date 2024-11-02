@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/firstFragment">
+
+    <fragment
+        android:id="@+id/firstFragment"
+        android:name="com.example.lab3.FirstFragment"
+        android:label="First Fragment"
+        tools:layout="@layout/fragment_one">
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+        <action
+            android:id="@+id/action_firstFragment_to_forthFragment"
+            app:destination="@id/forthFragment" />
+        <argument
+            android:name="FIRST_NAME"
+            app:argType="string" />
+        <argument
+            android:name="LAST_NAME"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.example.lab3.SecondFragment"
+        android:label="Second Fragment"
+        tools:layout="@layout/fragment_two">
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment"
+            app:destination="@id/thirdFragment" />
+        <argument
+            android:name="FIRST_NAME"
+            app:argType="string" />
+        <argument
+            android:name="LAST_NAME"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.example.lab3.ThirdFragment"
+        android:label="Third Fragment"
+        tools:layout="@layout/fragment_three">
+        <action
+            android:id="@+id/action_thirdFragment_to_firstFragment"
+            app:popUpTo="@id/firstFragment"
+            app:popUpToInclusive="true"
+            app:destination="@id/firstFragment" />
+        <argument
+            android:name="YEAR"
+            app:argType="integer" />
+        <argument
+            android:name="MONTH"
+            app:argType="integer" />
+        <argument
+            android:name="DAY"
+            app:argType="integer" />
+        <argument
+            android:name="FIRST_NAME"
+            app:argType="string" />
+        <argument
+            android:name="LAST_NAME"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/forthFragment"
+        android:name="com.example.lab3.ForthFragment"
+        android:label="Forth Fragment"
+        tools:layout="@layout/fragment_four">
+        <action
+            android:id="@+id/action_forthFragment_to_fifthFragment"
+            app:destination="@id/fifthFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fifthFragment"
+        android:name="com.example.lab3.FifthFragment"
+        android:label="Fifth Fragment"
+        tools:layout="@layout/fragment_five"/>
+</navigation>
