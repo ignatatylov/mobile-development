@@ -1,0 +1,378 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_margin="50dp"
+        android:background="@drawable/circle_shape"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Image"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_name"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_marginHorizontal="20dp"
+        android:text="Шрек"
+        android:textColor="#000000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:text="Люблю свою болоту"
+        android:layout_marginHorizontal="20dp"
+        android:textColor="#7D7D7D"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/profile_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="220dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="8dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_description">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/speciality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Специальность"
+                android:textColor="#7D7D7D"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/speciality_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:gravity="center"
+                android:text="Домохозяин"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Возраст"
+                android:textColor="#7D7D7D"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/age_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="300 лет"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:text="Рост"
+                android:textColor="#7D7D7D"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/height_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="240"
+                android:gravity="center"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="0dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_posts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="299"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Постов"
+                android:textColor="#7D7D7D"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#D9D9D9"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_following"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="299"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Подписок"
+                android:textColor="#7D7D7D"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#D9D9D9"></View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_followers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="4dp"
+                android:text="1300"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Подписчиков"
+                android:textColor="#7D7D7D"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_bio_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:paddingBottom="8dp"
+        android:text="О себе"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="474dp" />
+
+    <TextView
+        android:id="@+id/profile_bio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingHorizontal="16dp"
+        android:text="Тот самый зелёный парень, который живёт на болоте. \n\nУважаю хорошее болото с правильной грязью. \n\nНе жду гостей!"
+        android:textColor="#7D7D7D"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/profile_bio_title"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/profile_interests_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:padding="16dp"
+        android:text="Интересы"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/profile_bio"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:chipSpacing="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profile_interests_title">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Болота"
+            android:textColor="#FFFFFF"
+            app:chipBackgroundColor="#F44BDA"
+            app:chipCornerRadius="16dp"
+            app:chipStrokeWidth="0dp"
+            app:closeIconVisible="false" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
