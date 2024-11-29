@@ -1,0 +1,62 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/blue"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/cookieCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="40dp"
+        android:text="Печенья: 0"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/cookiePerSecond"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_gravity="center"
+        android:text="В секунду: 0"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/timeElapsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center"
+        android:text="Время: 0 сек."
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/cookieButton"
+        android:layout_gravity="center"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:src="@drawable/cookie" />
+
+    <TextView
+        android:id="@+id/cookiePerMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="center"
+        android:text="Средняя скорость: 0 п/мин"
+        android:textColor="@color/white"
+        android:fontFamily="@font/roboto"
+        android:textSize="18sp" />
+
+</LinearLayout>
